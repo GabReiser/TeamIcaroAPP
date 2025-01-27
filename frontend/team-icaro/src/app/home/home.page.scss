@@ -1,0 +1,51 @@
+/* Fundo Gradiente */
+
+
+.main-container {
+  height: 100vh; /* Ocupa toda a altura da tela */
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #020202, #280d1b); /* Gradiente suave */
+  color: white; /* Cor do texto */
+}
+
+/* Header com a Logo */
+.header-toolbar {
+  --background: transparent; /* Fundo transparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: 100px; /* Altura do header */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra leve */
+}
+
+.logo {
+  max-width: 180px; /* Largura máxima da logo */
+  height: auto;
+  object-fit: contain; /* Ajuste para manter proporção */
+}
+
+/* Estilização do Conteúdo */
+.home-content {
+  text-align: center; /* Centraliza o texto */
+  margin-top: 20px;
+  padding: 10px;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #16DB65; /* Verde claro */
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 1rem;
+    color: #ffffff; /* Branco */
+    opacity: 0.8; /* Transparência leve */
+  }
+}
+
+  ion-content{
+    --background: linear-gradient(180deg, #020202, #280d20);
+  }

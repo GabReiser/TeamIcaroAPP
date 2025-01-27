@@ -1,0 +1,49 @@
+<div class="main-container">
+  <!-- Calendário Horizontal -->
+  <div class="calendar-slider">
+    <div
+      class="swiper-container"
+      (swiperReachEnd)="generateMoreDates('next')"
+      (swiperReachBeginning)="generateMoreDates('prev')"
+    >
+      <div class="swiper-wrapper">
+        <div
+          class="swiper-slide"
+          *ngFor="let date of calendarDates"
+          (click)="selectDate(date)"
+          [class.selected]="selectedDate === date.toISOString().split('T')[0]"
+        >
+          <div class="day">{{ date | date: 'EEE' }}</div>
+          <div class="date">{{ date | date: 'dd' }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Botão "Iniciar Treino" -->
+  <button class="start-button" (click)="startWorkout()">Iniciar Treino</button>
+
+  <!-- Lista de Exercícios -->
+  <div class="workout-list" @listAnimation>
+    <div
+      class="workout-item"
+      *ngFor="let workout of selectedWorkouts"
+      (click)="openExerciseDetails(workout)">
+      <h3>{{ workout.name }}</h3>
+      <p>{{ workout.description }}</p>
+    </div>
+  </div>
+
+  <!-- Modal com Detalhes do Exercício -->
+  <ion-modal [isOpen]="selectedExercise !== null" (ionModalDidDismiss)="closeExerciseDetails()">
+    <ng-template>
+      <div class="exercise-details">
+        <h2>{{ selectedExercise?.name }}</h2>
+        <video controls [src]="selectedExercise?.videoUrl"></video>
+        <p>Repetições: {{ selectedExercise?.reps }}</p>
+        <button (click)="contactSupport()">Entrar em Contato</button>
+        <ion-button (click)="closeExerciseDetails()">Fechar</ion-button>
+      </div>
+    </ng-template>
+  </ion-modal>
+</div>
