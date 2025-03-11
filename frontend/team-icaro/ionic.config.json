@@ -1,7 +1,0 @@
-{
-  "name": "team-icaro",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular-standalone"
-}

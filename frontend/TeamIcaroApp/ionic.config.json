@@ -1,0 +1,7 @@
+{
+  "name": "TeamIcaroApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

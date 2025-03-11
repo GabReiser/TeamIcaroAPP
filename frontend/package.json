@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@ionic/angular": "^8.4.3",
+    "@tsparticles/angular": "^3.0.0",
+    "@tsparticles/confetti": "^3.8.1",
+    "@tsparticles/engine": "^3.8.1",
+    "tsparticles": "^3.8.1"
+  }
+}

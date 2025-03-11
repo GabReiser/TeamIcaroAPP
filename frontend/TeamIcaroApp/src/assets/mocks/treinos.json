@@ -1,0 +1,22 @@
+[
+    {
+      "name": "Remada Articulada Unilateral",
+      "instructions": "Warm up - sem falhar",
+      "videoUrl": "https://www.youtube.com/watch?v=KKRhLhRMENQ&pp=ygUJY2hpbGwgZ3V5",
+      "sets": [
+        { "series": "1/20", "instructions": "Anotar a carga" },
+        { "series": "1/8-10", "instructions": "Top set - até a falha" },
+        { "series": "1/máx", "instructions": "Anotar a carga" }
+      ]
+    },
+    {
+      "name": "Supino Reto",
+      "instructions": "Aquecimento leve antes de iniciar",
+      "videoUrl": "https://www.youtube.com/watch?v=8Pc0AEbfnBM&pp=ygUEbWVtZQ%3D%3D",
+      "sets": [
+        { "series": "3x12", "instructions": "Peso moderado" },
+        { "series": "3x10", "instructions": "Aumentar a carga progressivamente" }
+      ]
+    }
+  ]
+  
