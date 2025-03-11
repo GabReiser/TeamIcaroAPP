@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>🥗 Dieta</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <!-- Lista de Refeições -->
+  <h2 class="section-title">🍽️ Refeições</h2>
+  <ion-list>
+    <ng-container *ngFor="let refeicao of refeicoes">
+      <ion-item button (click)="toggleRefeicao(refeicao)">
+        <ion-icon name="restaurant-outline" slot="start"></ion-icon>
+        <ion-label>{{ refeicao.horario }} - {{ refeicao.titulo }}</ion-label>
+        <ion-icon [name]="refeicao.expanded ? 'chevron-up-outline' : 'chevron-down-outline'" slot="end"></ion-icon>
+      </ion-item>
+
+      <div 
+        class="expanded-container" 
+        [@expandAnimation]="refeicao.expanded ? 'expanded' : 'collapsed'"
+        [ngClass]="{'expanded': refeicao.expanded}">
+        <ion-card *ngFor="let alimento of refeicao.alimentos" class="food-card">
+          <ion-card-header>
+            <ion-card-title class="food-title">{{ alimento.nome }}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p class="food-quantity">{{ alimento.quantidade }}</p>
+            <ion-button expand="full" color="" class="substituir-btn">
+              🔄 Ver opções de substituição
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+      </div>
+    </ng-container>
+  </ion-list>
+
+  <!-- Metas e Objetivos -->
+  <h2 class="section-title">🎯 Metas e Objetivos</h2>
+  <ion-list>
+    <ion-item *ngFor="let objetivo of objetivos">
+      <ion-label>{{ objetivo.descricao }}</ion-label>
+      <ion-checkbox slot="end" [(ngModel)]="objetivo.concluido" color="tertiary"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+
+  <!-- Orientações Nutricionais -->
+  <h2 class="section-title">📋 Orientações Nutricionais</h2>
+  <ion-card>
+    <ion-card-content>
+      <p>💊 Suplementação.</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

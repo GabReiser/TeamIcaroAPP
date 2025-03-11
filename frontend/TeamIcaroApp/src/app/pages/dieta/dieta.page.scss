@@ -1,0 +1,120 @@
+/* 🔹 Fundo geral */
+ion-content {
+    --background: var(--ion-background-color);
+    padding-bottom: 20px;
+  }
+  
+/* 🔹 Títulos das seções */
+.section-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #a855f7; /* 🔥 Roxo do checkbox */
+    margin-top: 15px;
+    padding-left: 10px;
+  }
+
+  /* 🔹 Checkboxes */
+ion-checkbox {
+    --color: #a855f7; /* Roxo */
+    --background: rgba(255, 255, 255, 0.1);
+    --border-radius: 5px;
+  }
+  
+  
+  /* 🔹 Estilização dos itens da lista */
+  ion-item {
+    --background: rgba(255, 255, 255, 0.05);
+    --color: var(--ion-text-color);
+    --border-radius: 12px;
+    --padding-start: 12px;
+    --padding-end: 12px;
+    --inner-padding-end: 10px;
+    margin: 10px 15px;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* 🔥 Sombra leve */
+  }
+  
+  /* 🔹 Ícones dentro dos itens */
+  ion-icon {
+    font-size: 1.4rem;
+    color: var(--ion-text-color);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  /* 🔹 Animação do ícone ao expandir */
+  ion-item[button]:hover ion-icon {
+    transform: scale(1.1);
+  }
+  
+  /* 🔹 Cards das refeições */
+  .food-card {
+    --background: rgba(255, 255, 255, 0.08);
+    --border-radius: 14px;
+    --padding: 14px;
+    --box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 12px 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  /* 🔹 Efeito no card ao passar o mouse */
+  .food-card:hover {
+    transform: scale(1.03);
+    --box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* 🔹 Nome do alimento */
+  .food-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--ion-text-color);
+  }
+  
+  /* 🔹 Quantidade do alimento */
+  .food-quantity {
+    font-size: 1rem;
+    color: var(--ion-color-medium);
+  }
+  
+/* 🔹 Botão de substituição refinado */
+.substituir-btn {
+    --background: #a855f7 !important; /* Roxo */
+    --color: white !important;
+    --border-radius: 12px !important;
+    --box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2) !important;
+    font-weight: bold;
+    font-size: 0.85rem !important; /* 🔥 Diminui o tamanho do texto */
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 0.5px; /* 🔹 Menos espaçamento entre as letras */
+    padding: 8px 12px !important; /* 🔥 Ajusta o padding para um visual mais equilibrado */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+
+  /* 🔹 Força o border-radius caso o Ionic esteja sobrescrevendo */
+.substituir-btn::part(native) {
+    border-radius: 12px !important;
+  }
+  
+  
+/* 🔹 Efeito no botão ao passar o mouse */
+.substituir-btn:hover {
+    transform: scale(1.05);
+    --box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3) !important;
+  }
+  
+  /* 🔹 Container expandido */
+  .expanded-container {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    display: none;
+  }
+  
+  /* 🔹 Quando expandido */
+  .expanded-container.expanded {
+    display: block;
+    max-height: 1000px;
+    opacity: 1;
+  }
+  

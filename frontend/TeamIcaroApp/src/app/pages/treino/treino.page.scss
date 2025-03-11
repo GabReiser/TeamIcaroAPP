@@ -1,0 +1,98 @@
+ion-content {
+    --background: var(--ion-background-color);
+  }
+  
+  ion-card {
+    background-color: var(--app-card-background);
+    color: var(--ion-text-color);
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 16px;
+  }
+  
+  ion-item {
+    --background: transparent;
+    --color: var(--ion-text-color);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  ion-label, p {
+    color: var(--ion-color-medium);
+  }
+  
+  ion-button {
+    --background: var(--app-button-background);
+    --color: var(--app-button-text);
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  
+  h2, ion-card-title {
+    color: var(--ion-text-color);
+  }
+  
+  ion-input {
+    --placeholder-color: var(--ion-color-medium);
+    color: var(--ion-text-color);
+    width: 120px;
+  }
+
+  .exercise-card {
+    width: 90%; // Garante que os cards usem mais espaço
+    margin: 10px auto;
+  }
+  
+  .exercise-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .exercise-info {
+    flex: 1;
+  }
+  
+  /* ✅ Ajustando o vídeo dentro do card */
+  .video-container {
+    margin-top: 10px;
+    border-radius: 8px;
+    overflow: hidden; // Garante que o vídeo respeite os cantos arredondados
+    display: flex;
+    justify-content: center;
+  }
+  
+  video {
+    max-width: 100%;
+    border-radius: 8px; // Adiciona bordas arredondadas ao vídeo para ficar no mesmo padrão do card
+  }
+
+  /* ✅ Melhorando visibilidade do Checkbox */
+.concluido-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(127, 90, 240, 0.1); // Fundo sutil para destaque
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.concluido-label {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.concluido-checkbox {
+  --size: 24px; // Aumenta o tamanho do checkbox
+  --border-color: #7f5af0; // Cor roxa para ficar no tema do app
+  --background-checked: #2cb67d; // Cor verde quando marcado
+  --border-radius: 6px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.concluido-checkbox:checked {
+  transform: scale(1.2); // Efeito de crescimento ao marcar
+}
+
+  
