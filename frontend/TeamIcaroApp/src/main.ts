@@ -4,7 +4,7 @@ import { IonicRouteStrategy, provideIonicAngular } from '@ionic/angular/standalo
 import { provideAnimations } from '@angular/platform-browser/animations'; 
 import { IonicModule } from '@ionic/angular'
 import { addIcons } from 'ionicons';
-import { home, barbell, nutrition, person, restaurant, chevronDown, chevronUp, restaurantOutline, personCircleOutline, checkmark, checkmarkCircle, hourglass, close } from 'ionicons/icons';
+import { home, barbell, nutrition, person, restaurant, chevronDown, chevronUp, restaurantOutline, personCircleOutline, checkmark, checkmarkCircle, hourglass, close, chevronDownOutline, chevronUpOutline, logoGoogle } from 'ionicons/icons';
 
 
 import { routes } from './app/app.routes';
@@ -20,6 +20,9 @@ addIcons({
   restaurant,
   checkmarkCircle,
   hourglass,
+  chevronDownOutline,
+  chevronUpOutline,
+  logoGoogle,
   'close': close,
   'person-circle-outline': personCircleOutline,
   'restaurant-outline' : restaurantOutline,

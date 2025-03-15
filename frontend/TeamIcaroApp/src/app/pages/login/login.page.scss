@@ -1,0 +1,97 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+  
+    .login-icon {
+      font-size: 90px;
+      color: white;
+      margin-bottom: 20px;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 15px;
+      border-radius: 50%;
+    }
+  
+    form {
+      width: 100%;
+      max-width: 400px;
+      background: rgba(255, 255, 255, 0.2); // Mantém um fundo semi-transparente
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+      backdrop-filter: none; // Remove o blur
+  
+      ion-item {
+        --background: rgba(255, 255, 255, 0.2);
+        --border-radius: 8px;
+        --padding-start: 15px;
+        --padding-end: 15px;
+        margin-bottom: 10px;
+        color: white;
+  
+        ion-label {
+          color: white;
+        }
+  
+        ion-input {
+          color: white;
+        }
+      }
+  
+      ion-button {
+        width: 100%;
+        --border-radius: 8px !important;
+        border-radius: 8px !important;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-top: 10px;
+      }
+
+      .google-login {
+        --background: #ffffff;
+        --color: #000;
+        --border-radius: 25px !important;
+        --border-color: #ccc;
+        --border-width: 1px;
+        --box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        font-weight: bold;
+        text-transform: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 12px;
+        width: 100%;
+        transition: 0.3s;
+      
+        &:hover {
+          --background: #f8f8f8;
+        }
+      
+        ion-icon {
+          font-size: 20px;
+          color: #db4437;
+          margin-right: 10px;
+        }
+      }
+  
+      .forgot-password {
+        margin-top: 15px;
+        color: white;
+        font-size: 14px;
+        text-align: center;
+        cursor: pointer;
+        text-decoration: underline;
+        &:hover {
+          color: #ffcc00;
+        }
+      }
+    }
+  }
+
+  
