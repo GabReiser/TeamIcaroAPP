@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
 import { IonicModule } from '@ionic/angular';
 import { trigger, state, style, transition, animate } from '@angular/animations';
+import { DietaService } from 'src/app/services/dieta.service';
 
 @Component({
   selector: 'app-dieta',
@@ -32,39 +33,21 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
     ])
   ]
 })
-export class DietaPage {
-  constructor(private cd: ChangeDetectorRef){}
-  refeicoes = [
-    {
-      horario: '07:00',
-      titulo: 'Refeição 1',
-      expanded: false, // Estado de expansão
-      alimentos: [
-        { nome: 'Pão de forma tradicional', quantidade: '2 fatias ou 50g' },
-        { nome: 'Requeijão', quantidade: '20g' },
-        { nome: 'Ovo', quantidade: '2 unidades médias ou 100g' },
-      ],
-    },
-    {
-      horario: '12:00',
-      titulo: 'Refeição 2',
-      expanded: false, // Estado de expansão
-      alimentos: [
-        { nome: 'Arroz branco', quantidade: '180g' },
-        { nome: 'Feijão', quantidade: '80g' },
-        { nome: 'Carne bovina magra', quantidade: '120g' },
-      ],
-    },
-  ];
+export class DietaPage implements OnInit {
+  refeicoes: any[] = [];
+  objetivos: any[] = [];
 
-  objetivos = [
-    { descricao: 'Beber 3,6L de água por dia', concluido: false },
-    { descricao: 'Evitar açúcar e farinha branca', concluido: false },
-    { descricao: 'Comer mais proteínas', concluido: false },
-  ];
+  constructor(private cd: ChangeDetectorRef, private dietaService: DietaService){}
+
+  ngOnInit() {
+    this.dietaService.getDieta().subscribe((data) => {
+      this.refeicoes = data.refeicoes;
+      this.objetivos = data.objetivos;
+    });
+  }
 
   toggleRefeicao(refeicao: any) {
     refeicao.expanded = !refeicao.expanded;
-    setTimeout(() => this.cd.detectChanges(), 50); // 🔥 Pequeno delay para Angular atualizar
+    setTimeout(() => this.cd.detectChanges(), 50);
   }
 }

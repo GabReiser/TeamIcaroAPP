@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>✅ Metas Cumpridas</ion-title>
+      <ion-buttons slot="end">
+        <ion-button (click)="fecharModal()">
+          <ion-icon name="close"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content class="ion-padding">
+    <div class="modal-content">
+      <ion-icon name="checkmark-circle" class="icon-large"></ion-icon>
+      <h2>Sucesso!</h2>
+      <p>Você já cumpriu várias metas! Veja seu progresso:</p>
+      <ion-list>
+        <ion-item *ngFor="let meta of metas">
+          <ion-label>{{ meta.descricao }}</ion-label>
+          <ion-badge color="success">{{ meta.concluido ? '✔️' : '❌' }}</ion-badge>
+        </ion-item>
+      </ion-list>
+      <p>🔥 Recompensa: <strong>+XP por cada meta cumprida!</strong></p>
+    </div>
+  </ion-content>
+  

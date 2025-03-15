@@ -1,13 +1,52 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>perfil</ion-title>
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      <ion-icon name="person-circle-outline"></ion-icon> Perfil
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">perfil</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding">
+  <!-- Avatar e Nível -->
+  <div class="profile-header">
+    <img src="assets/user.png" alt="Avatar do Usuário" class="profile-avatar" />
+    <div class="level-info">
+      <h2>{{ usuario.nome }}</h2>
+      <p>Nível {{ usuario.nivel }} - {{ usuario.xp }}/{{ usuario.proximoNivelXp }} XP</p>
+      <div class="xp-bar">
+        <div class="xp-progress" [style.width.%]="usuario.xp / usuario.proximoNivelXp * 100"></div>
+      </div>
+    </div>
+  </div>
+
+<!-- Conquistas -->
+<h2 class="section-title">🏆 Conquistas</h2>
+<ion-grid>
+  <ion-row>
+    <ion-col *ngFor="let conquista of usuario.conquistas">
+      <ion-card class="achievement-card" (click)="abrirModal(conquista.tipo)">
+        <ion-icon [name]="conquista.icone" class="achievement-icon"></ion-icon>
+        <p>{{ conquista.nome }}</p>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+
+  <!-- Resumo Semanal -->
+  <h2 class="section-title">📊 Resumo da Semana</h2>
+  <ion-list>
+    <ion-item>
+      <ion-label>Treinos Completos</ion-label>
+      <ion-badge color="success">{{ usuario.treinosConcluidos }}/5</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Metas Atingidas</ion-label>
+      <ion-badge color="tertiary">{{ usuario.metasConcluidas }}/3</ion-badge>
+    </ion-item>
+  </ion-list>
+
+  <!-- Botões -->
+  <ion-button expand="full" color="dark">Histórico</ion-button>
+  <ion-button expand="full" color="medium">Configurações</ion-button>
 </ion-content>

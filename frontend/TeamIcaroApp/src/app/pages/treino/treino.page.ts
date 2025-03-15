@@ -3,7 +3,7 @@ import { IonicModule, NavController, ToastController } from '@ionic/angular'; //
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
-import { TreinoService } from './treino.service';
+import { TreinoService } from '../../services/treino.service';
 
 interface ExerciseSet {
   series: string;

@@ -1,0 +1,30 @@
+{
+    "refeicoes": [
+      {
+        "horario": "07:00",
+        "titulo": "Refeição 1",
+        "expanded": false,
+        "alimentos": [
+          { "nome": "Pão de forma tradicional", "quantidade": "2 fatias ou 50g" },
+          { "nome": "Requeijão", "quantidade": "20g" },
+          { "nome": "Ovo", "quantidade": "2 unidades médias ou 100g" }
+        ]
+      },
+      {
+        "horario": "12:00",
+        "titulo": "Refeição 2",
+        "expanded": false,
+        "alimentos": [
+          { "nome": "Arroz branco", "quantidade": "180g" },
+          { "nome": "Feijão", "quantidade": "80g" },
+          { "nome": "Carne bovina magra", "quantidade": "120g" }
+        ]
+      }
+    ],
+    "objetivos": [
+      { "descricao": "Beber 3,6L de água por dia", "concluido": false },
+      { "descricao": "Evitar açúcar e farinha branca", "concluido": false },
+      { "descricao": "Comer mais proteínas", "concluido": false }
+    ]
+  }
+  
