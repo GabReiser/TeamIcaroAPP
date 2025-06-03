@@ -1,30 +1,80 @@
 {
-    "refeicoes": [
-      {
-        "horario": "07:00",
-        "titulo": "Refeição 1",
-        "expanded": false,
-        "alimentos": [
-          { "nome": "Pão de forma tradicional", "quantidade": "2 fatias ou 50g" },
-          { "nome": "Requeijão", "quantidade": "20g" },
-          { "nome": "Ovo", "quantidade": "2 unidades médias ou 100g" }
-        ]
-      },
-      {
-        "horario": "12:00",
-        "titulo": "Refeição 2",
-        "expanded": false,
-        "alimentos": [
-          { "nome": "Arroz branco", "quantidade": "180g" },
-          { "nome": "Feijão", "quantidade": "80g" },
-          { "nome": "Carne bovina magra", "quantidade": "120g" }
-        ]
-      }
-    ],
-    "objetivos": [
-      { "descricao": "Beber 3,6L de água por dia", "concluido": false },
-      { "descricao": "Evitar açúcar e farinha branca", "concluido": false },
-      { "descricao": "Comer mais proteínas", "concluido": false }
-    ]
-  }
-  
+  "refeicoes": [
+    {
+      "horario": "07:00",
+      "titulo": "Café da Manhã",
+      "expanded": false,
+      "alimentos": [
+        { "nome": "Ovos cozidos", "quantidade": "3 unidades" },
+        { "nome": "Pão integral", "quantidade": "2 fatias" },
+        { "nome": "Abacate", "quantidade": "2 colheres de sopa" },
+        { "nome": "Café sem açúcar", "quantidade": "1 xícara" }
+      ]
+    },
+    {
+      "horario": "10:00",
+      "titulo": "Lanche da Manhã",
+      "expanded": false,
+      "alimentos": [
+        { "nome": "Iogurte natural ou grego sem açúcar", "quantidade": "1 pote (150g)" },
+        { "nome": "Mix de castanhas", "quantidade": "1 punhado (30g)" }
+      ]
+    },
+    {
+      "horario": "12:30",
+      "titulo": "Almoço",
+      "expanded": false,
+      "alimentos": [
+        { "nome": "Arroz integral ou branco", "quantidade": "150g" },
+        { "nome": "Feijão ou lentilha", "quantidade": "60g" },
+        { "nome": "Frango grelhado", "quantidade": "150g" },
+        { "nome": "Salada verde com azeite", "quantidade": "à vontade" },
+        { "nome": "Batata doce", "quantidade": "100g" }
+      ]
+    },
+    {
+      "horario": "15:30",
+      "titulo": "Pré-Treino",
+      "expanded": false,
+      "alimentos": [
+        { "nome": "Banana", "quantidade": "1 unidade" },
+        { "nome": "Aveia", "quantidade": "2 colheres de sopa" },
+        { "nome": "Pasta de amendoim", "quantidade": "1 colher de sopa" }
+      ]
+    },
+    {
+      "horario": "17:30",
+      "titulo": "Pós-Treino",
+      "expanded": false,
+      "alimentos": [
+        { "nome": "Whey Protein", "quantidade": "1 scoop (30g)" },
+        { "nome": "Banana ou fruta com alto índice glicêmico", "quantidade": "1 unidade" }
+      ]
+    },
+    {
+      "horario": "20:00",
+      "titulo": "Jantar",
+      "expanded": false,
+      "alimentos": [
+        { "nome": "Frango ou tilápia grelhada", "quantidade": "150g" },
+        { "nome": "Legumes cozidos ou grelhados", "quantidade": "à vontade" },
+        { "nome": "Quinoa ou arroz integral", "quantidade": "100g" }
+      ]
+    },
+    {
+      "horario": "22:30",
+      "titulo": "Ceia",
+      "expanded": false,
+      "alimentos": [
+        { "nome": "Ovo cozido", "quantidade": "2 unidades" },
+        { "nome": "Cottage ou iogurte natural", "quantidade": "100g" }
+      ]
+    }
+  ],
+  "objetivos": [
+    { "descricao": "Beber 3,6L de água por dia", "concluido": false },
+    { "descricao": "Evitar açúcar e farinha branca", "concluido": false },
+    { "descricao": "Manter a ingestão de proteínas a cada 3 horas", "concluido": false },
+    { "descricao": "Dormir pelo menos 7h por noite", "concluido": false }
+  ]
+}

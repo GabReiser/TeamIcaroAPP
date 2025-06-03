@@ -2,6 +2,15 @@
   <ion-toolbar color="primary">
     <ion-title>Treino</ion-title>
   </ion-toolbar>
+  <ion-item>
+  <ion-label>Dia do treino</ion-label>
+  <ion-select aria-label="Fruit" placeholder="Select all fruits that apply" [(ngModel)]="selectedDay" (ionChange)="onDayChange($event)" interface="popover">
+    <ion-select-option *ngFor="let day of diasTreino" [value]="day.value">
+      {{ day.label }}
+    </ion-select-option>
+  </ion-select>
+</ion-item>
+
 </ion-header>
 
 <ion-content class="ion-padding">
@@ -28,11 +37,14 @@
       </ion-item>
   
       <!-- ✅ Vídeo da execução do exercício -->
-      <div class="video-container" *ngIf="exercise.videoUrl">
-        <video width="100%" controls>
-          <source [src]="exercise.videoUrl" type="video/mp4" />
-          Seu navegador não suporta vídeos.
-        </video>
+      <div class="video-container" *ngIf="getEmbeddedVideoUrl(exercise)">
+        <iframe
+          width="100%"
+          height="315"
+          [src]="getEmbeddedVideoUrl(exercise)"
+          frameborder="0"
+          allowfullscreen>
+        </iframe>
       </div>
     </ion-card-content>
   </ion-card>

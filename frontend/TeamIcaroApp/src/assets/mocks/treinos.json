@@ -1,22 +1,210 @@
-[
+{
+  "day1": [
     {
-      "name": "Remada Articulada Unilateral",
-      "instructions": "Warm up - sem falhar",
-      "videoUrl": "https://www.youtube.com/watch?v=KKRhLhRMENQ&pp=ygUJY2hpbGwgZ3V5",
+      "name": "Supino reto com barra",
+      "instructions": "Foco na execução controlada",
+      "videoUrl": "https://www.youtube.com/watch?v=VmB1G1K7v94",
       "sets": [
-        { "series": "1/20", "instructions": "Anotar a carga" },
-        { "series": "1/8-10", "instructions": "Top set - até a falha" },
-        { "series": "1/máx", "instructions": "Anotar a carga" }
+        { "series": "4x10", "instructions": "Progressivo até falhar na última" }
       ]
     },
     {
-      "name": "Supino Reto",
-      "instructions": "Aquecimento leve antes de iniciar",
-      "videoUrl": "https://www.youtube.com/watch?v=8Pc0AEbfnBM&pp=ygUEbWVtZQ%3D%3D",
+      "name": "Supino inclinado com halteres",
+      "instructions": "Inclinação de 30° a 45°",
+      "videoUrl": "https://www.youtube.com/watch?v=8iPEnn-ltC8",
       "sets": [
-        { "series": "3x12", "instructions": "Peso moderado" },
-        { "series": "3x10", "instructions": "Aumentar a carga progressivamente" }
+        { "series": "3x12", "instructions": "Peso moderado" }
+      ]
+    },
+    {
+      "name": "Crossover no cabo",
+      "instructions": "Cruze as mãos na frente do corpo, contraia o peitoral",
+      "videoUrl": "https://www.youtube.com/watch?v=taI4XduLpTk",
+      "sets": [
+        { "series": "3x15", "instructions": "Ênfase na contração máxima" }
+      ]
+    },
+    {
+      "name": "Tríceps pulley com corda",
+      "instructions": "Movimento controlado, sem balançar o tronco",
+      "videoUrl": "https://www.youtube.com/watch?v=vB5OHsJ3EME",
+      "sets": [
+        { "series": "3x12", "instructions": "Contraia forte no final" }
+      ]
+    },
+    {
+      "name": "Paralelas ou mergulho no banco",
+      "instructions": "Use peso corporal ou com anilha entre as pernas",
+      "videoUrl": "https://www.youtube.com/watch?v=2z8JmcrW-As",
+      "sets": [
+        { "series": "3x12", "instructions": "Até a falha técnica" }
+      ]
+    },
+    {
+      "name": "Abdominal na polia/cabo",
+      "instructions": "Use carga leve/moderada, concentre-se na contração",
+      "videoUrl": "https://www.youtube.com/watch?v=KVlNSPldaks",
+      "sets": [
+        { "series": "3x15", "instructions": "Curvar-se puxando com o abdômen" }
+      ]
+    },
+    {
+      "name": "Prancha isométrica",
+      "instructions": "Contraia abdômen e glúteos",
+      "videoUrl": "https://www.youtube.com/watch?v=pSHjTRCQxIw",
+      "sets": [
+        { "series": "3x30s", "instructions": "Sem perder a postura" }
+      ]
+    }
+  ],
+  "day2": [
+    {
+      "name": "Puxada frente na barra ou polia",
+      "instructions": "Foco na contração das costas",
+      "videoUrl": "https://www.youtube.com/watch?v=CAwf7n6Luuc",
+      "sets": [
+        { "series": "4x10", "instructions": "Desça até o peitoral, movimento controlado" }
+      ]
+    },
+    {
+      "name": "Remada curvada com barra",
+      "instructions": "Coluna reta, puxa com as costas",
+      "videoUrl": "https://www.youtube.com/watch?v=vT2GjY_Umpw",
+      "sets": [
+        { "series": "3x10", "instructions": "Pega médio, sem roubar no movimento" }
+      ]
+    },
+    {
+      "name": "Pulldown unilateral no cabo",
+      "instructions": "Alcance o quadril com a mão puxando o cabo",
+      "videoUrl": "https://www.youtube.com/watch?v=KO6tyQZ5KzQ",
+      "sets": [
+        { "series": "3x12", "instructions": "Segura bem no final da puxada" }
+      ]
+    },
+    {
+      "name": "Rosca direta com barra",
+      "instructions": "Evite balançar o tronco",
+      "videoUrl": "https://www.youtube.com/watch?v=kwG2ipFRgfo",
+      "sets": [
+        { "series": "3x10", "instructions": "Execução lenta e controlada" }
+      ]
+    },
+    {
+      "name": "Rosca martelo alternada",
+      "instructions": "Pegada neutra, sem inclinar o pulso",
+      "videoUrl": "https://www.youtube.com/watch?v=zC3nLlEvin4",
+      "sets": [
+        { "series": "3x12", "instructions": "Segura 1s no topo" }
+      ]
+    },
+    {
+      "name": "Elevação de pernas suspenso",
+      "instructions": "Evite embalo, foco no abdômen",
+      "videoUrl": "https://www.youtube.com/watch?v=JB2oyawG9KI",
+      "sets": [
+        { "series": "3x15", "instructions": "Movimento limpo, sem balançar" }
+      ]
+    }
+  ],
+  "day3": [
+    {
+      "name": "Agachamento livre com barra",
+      "instructions": "Profundidade controlada, joelhos alinhados",
+      "videoUrl": "https://www.youtube.com/watch?v=Dy28eq2PjcM",
+      "sets": [
+        { "series": "4x8", "instructions": "Aumentar carga progressivamente" }
+      ]
+    },
+    {
+      "name": "Leg press 45°",
+      "instructions": "Pés afastados na plataforma, controle total",
+      "videoUrl": "https://www.youtube.com/watch?v=IZxyjW7MPJQ",
+      "sets": [
+        { "series": "4x12", "instructions": "Desça até 90°, suba sem travar o joelho" }
+      ]
+    },
+    {
+      "name": "Afundo com halteres",
+      "instructions": "Passos largos, joelhos a 90°",
+      "videoUrl": "https://www.youtube.com/watch?v=QOVaHwm-Q6U",
+      "sets": [
+        { "series": "3x10", "instructions": "Cada perna, foco no glúteo" }
+      ]
+    },
+    {
+      "name": "Mesa flexora",
+      "instructions": "Movimento controlado, sem tirar o quadril",
+      "videoUrl": "https://www.youtube.com/watch?v=1Tq3QdYUuHs",
+      "sets": [
+        { "series": "3x15", "instructions": "Segura 1s na contração" }
+      ]
+    },
+    {
+      "name": "Stiff com halteres",
+      "instructions": "Coluna reta, desce até sentir alongar posterior",
+      "videoUrl": "https://www.youtube.com/watch?v=6xwGFn-J_Qw",
+      "sets": [
+        { "series": "3x12", "instructions": "Não exagerar na profundidade" }
+      ]
+    },
+    {
+      "name": "Prancha com elevação de perna",
+      "instructions": "Alterna elevação sem perder o alinhamento",
+      "videoUrl": "https://www.youtube.com/watch?v=ynUw0YsrmSg",
+      "sets": [
+        { "series": "3x30s", "instructions": "Glúteo firme e abdômen contraído" }
+      ]
+    }
+  ],
+  "day4": [
+    {
+      "name": "Burpees",
+      "instructions": "Execução contínua, respiração sincronizada",
+      "videoUrl": "https://www.youtube.com/watch?v=dZgVxmf6jkA",
+      "sets": [
+        { "series": "3x15", "instructions": "Explosivo do início ao fim" }
+      ]
+    },
+    {
+      "name": "Clean and Press com halteres",
+      "instructions": "Força + coordenação no movimento",
+      "videoUrl": "https://www.youtube.com/watch?v=qWFuJ9QZbJ8",
+      "sets": [
+        { "series": "3x10", "instructions": "Velocidade + precisão" }
+      ]
+    },
+    {
+      "name": "Kettlebell swing",
+      "instructions": "Movimento de quadril, não braço",
+      "videoUrl": "https://www.youtube.com/watch?v=YSx8tWhvC2Y",
+      "sets": [
+        { "series": "4x20", "instructions": "Explosivo com descanso curto" }
+      ]
+    },
+    {
+      "name": "Mountain climbers",
+      "instructions": "Velocidade controlada, abdômen firme",
+      "videoUrl": "https://www.youtube.com/watch?v=nmwgirgXLYM",
+      "sets": [
+        { "series": "4x30s", "instructions": "Não perder o ritmo" }
+      ]
+    },
+    {
+      "name": "Jump squat",
+      "instructions": "Salte com leveza e controle",
+      "videoUrl": "https://www.youtube.com/watch?v=U4s4mEQ5VqU",
+      "sets": [
+        { "series": "3x12", "instructions": "Explosivo, sem impacto no joelho" }
+      ]
+    },
+    {
+      "name": "Prancha lateral com elevação de quadril",
+      "instructions": "Foco no oblíquo e estabilidade",
+      "videoUrl": "https://www.youtube.com/watch?v=K2VljzCC16g",
+      "sets": [
+        { "series": "3x12 cada lado", "instructions": "Não deixar o quadril cair" }
       ]
     }
   ]
-  
+}

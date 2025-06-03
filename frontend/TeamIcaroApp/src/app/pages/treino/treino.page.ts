@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 import { TreinoService } from '../../services/treino.service';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 interface ExerciseSet {
   series: string;
@@ -34,7 +35,8 @@ export class TreinoPage implements OnInit {
     private treinoService: TreinoService,
     private router: Router,
     private navCtrl: NavController,
-    private toastController: ToastController // ✅ Adicionando ToastController
+    private toastController: ToastController, // ✅ Adicionando ToastController
+    private sanitizer: DomSanitizer
   ) {}
 
   ngOnInit() {
@@ -42,16 +44,15 @@ export class TreinoPage implements OnInit {
   }
 
   loadTreinos() {
-    this.treinoService.getTreinosDoDia().subscribe(
-      (data) => {
-        this.exercises = data.map(ex => ({ ...ex, completed: false }));
-      },
-      (error) => {
-        console.error('Erro ao carregar os treinos do dia:', error);
-      }
-    );
-  }
-
+  this.treinoService.getTreinosDoDia(this.selectedDay).subscribe(
+    (data) => {
+      this.exercises = data.map(ex => ({ ...ex, completed: false }));
+    },
+    (error) => {
+      console.error('Erro ao carregar os treinos do dia:', error);
+    }
+  );
+}
   toggleCompleted(index: number) {
     this.exercises[index].completed = !this.exercises[index].completed;
   }
@@ -115,4 +116,34 @@ export class TreinoPage implements OnInit {
 
     await toast.present();
   }
+
+  diasTreino = [
+  { label: 'Day 1', value: 'day1' },
+  { label: 'Day 2', value: 'day2' },
+  { label: 'Day 3', value: 'day3' },
+  { label: 'Day 4', value: 'day4' }
+];
+
+selectedDay = 'day1'; // valor padrão
+
+onDayChange(event: any) {
+  const day = event.detail.value;
+  console.log('Dia selecionado:', day);
+  this.loadTreinos(); // ou outra função para carregar os treinos desse dia
+}
+
+getEmbeddedVideoUrl(exercise: Exercise): SafeResourceUrl | null {
+  if (!exercise?.videoUrl) return null;
+  const videoId = this.extractYouTubeVideoId(exercise.videoUrl);
+  if (!videoId) return null;
+  const embedUrl = `https://www.youtube.com/embed/${videoId}`;
+  return this.sanitizer.bypassSecurityTrustResourceUrl(embedUrl);
+}
+
+  private extractYouTubeVideoId(url: string): string | null {
+    const regex = /[?&]v=([^&#]*)/;
+    const match = url.match(regex);
+    return match ? match[1] : null;
+  }
+
 }
