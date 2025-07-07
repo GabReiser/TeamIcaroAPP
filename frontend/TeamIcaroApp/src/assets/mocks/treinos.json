@@ -1,62 +1,62 @@
 {
   "day1": [
-    {
-      "name": "Supino reto com barra",
-      "instructions": "Foco na execução controlada",
-      "videoUrl": "https://www.youtube.com/watch?v=VmB1G1K7v94",
-      "sets": [
-        { "series": "4x10", "instructions": "Progressivo até falhar na última" }
-      ]
-    },
-    {
-      "name": "Supino inclinado com halteres",
-      "instructions": "Inclinação de 30° a 45°",
-      "videoUrl": "https://www.youtube.com/watch?v=8iPEnn-ltC8",
-      "sets": [
-        { "series": "3x12", "instructions": "Peso moderado" }
-      ]
-    },
-    {
-      "name": "Crossover no cabo",
-      "instructions": "Cruze as mãos na frente do corpo, contraia o peitoral",
-      "videoUrl": "https://www.youtube.com/watch?v=taI4XduLpTk",
-      "sets": [
-        { "series": "3x15", "instructions": "Ênfase na contração máxima" }
-      ]
-    },
-    {
-      "name": "Tríceps pulley com corda",
-      "instructions": "Movimento controlado, sem balançar o tronco",
-      "videoUrl": "https://www.youtube.com/watch?v=vB5OHsJ3EME",
-      "sets": [
-        { "series": "3x12", "instructions": "Contraia forte no final" }
-      ]
-    },
-    {
-      "name": "Paralelas ou mergulho no banco",
-      "instructions": "Use peso corporal ou com anilha entre as pernas",
-      "videoUrl": "https://www.youtube.com/watch?v=2z8JmcrW-As",
-      "sets": [
-        { "series": "3x12", "instructions": "Até a falha técnica" }
-      ]
-    },
-    {
-      "name": "Abdominal na polia/cabo",
-      "instructions": "Use carga leve/moderada, concentre-se na contração",
-      "videoUrl": "https://www.youtube.com/watch?v=KVlNSPldaks",
-      "sets": [
-        { "series": "3x15", "instructions": "Curvar-se puxando com o abdômen" }
-      ]
-    },
-    {
-      "name": "Prancha isométrica",
-      "instructions": "Contraia abdômen e glúteos",
-      "videoUrl": "https://www.youtube.com/watch?v=pSHjTRCQxIw",
-      "sets": [
-        { "series": "3x30s", "instructions": "Sem perder a postura" }
-      ]
-    }
-  ],
+  {
+    "name": "Puxada alta na frente (pulldown)",
+    "instructions": "Pegada aberta, desça até o peito com controle",
+    "videoUrl": "https://www.youtube.com/watch?v=CAwf7n6Luuc",
+    "sets": [
+      { "series": "4x10", "instructions": "Última série até a falha com drop set" }
+    ]
+  },
+  {
+    "name": "Remada curvada com barra",
+    "instructions": "Mantenha a coluna neutra e puxa com o dorso, não com o ego",
+    "videoUrl": "https://www.youtube.com/watch?v=vT2GjY_Umpw",
+    "sets": [
+      { "series": "4x8", "instructions": "Peso desafiador, forma impecável" }
+    ]
+  },
+  {
+    "name": "Remada baixa na máquina",
+    "instructions": "Pegada neutra, puxe em direção ao umbigo",
+    "videoUrl": "https://www.youtube.com/watch?v=GZbfZ033f74",
+    "sets": [
+      { "series": "3x12", "instructions": "Contraia as escápulas no final" }
+    ]
+  },
+  {
+    "name": "Rosca direta com barra EZ",
+    "instructions": "Não balance o corpo, foco total no bíceps",
+    "videoUrl": "https://www.youtube.com/watch?v=vA2fMuG1fFE",
+    "sets": [
+      { "series": "4x10", "instructions": "Suba explosivo, desça lento" }
+    ]
+  },
+  {
+    "name": "Rosca martelo com halteres",
+    "instructions": "Mantenha o braço firme, sem girar o punho",
+    "videoUrl": "https://www.youtube.com/watch?v=zC3nLlEvin4",
+    "sets": [
+      { "series": "3x12", "instructions": "Controle total, pega no braquial" }
+    ]
+  },
+  {
+    "name": "Face Pull com corda",
+    "instructions": "Puxe a corda na direção do rosto, cotovelos altos",
+    "videoUrl": "https://www.youtube.com/watch?v=vG2v-rsHnOg",
+    "sets": [
+      { "series": "3x15", "instructions": "Ótimo pra proteger ombros e bombar deltóide posterior" }
+    ]
+  },
+  {
+    "name": "Abdominal infra na barra (elevação de pernas)",
+    "instructions": "Evite balançar o corpo, contraia forte no topo",
+    "videoUrl": "https://www.youtube.com/watch?v=t3jSr4bW4w0",
+    "sets": [
+      { "series": "3x12", "instructions": "Suba devagar, desça mais devagar ainda" }
+    ]
+  }
+],
   "day2": [
     {
       "name": "Puxada frente na barra ou polia",
